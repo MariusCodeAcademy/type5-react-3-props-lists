@@ -1,0 +1,21 @@
+.icon-card-section {
+  padding: 4% 0;
+}
+.icon-card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.icon-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.icon {
+  padding: 20px;
+  font-size: 1.8rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
