@@ -17,7 +17,7 @@ const iconCardsData = [
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, provident.',
   },
   {
-    icon: 'fa-house',
+    icon: 'fa-home',
     title: 'Work at home',
     text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, provident.',
   },
@@ -36,8 +36,10 @@ const iconCardsData = [
 function IconCardList() {
   return (
     <div className='icon-card-list'>
-      <IconCard info={iconCardsData[0]} />
-      <IconCard info={iconCardsData[1]} />
+      {iconCardsData.map((cardObj) => (
+        <IconCard key={cardObj.title} info={cardObj} />
+      ))}
+      {/* <IconCard info={iconCardsData[0]} /> */}
     </div>
   );
 }
