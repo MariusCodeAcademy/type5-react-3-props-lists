@@ -1,3 +1,4 @@
+import Button from '../UI/Button';
 import './heroSection.css';
 
 function HeroSection(props) {
@@ -6,7 +7,9 @@ function HeroSection(props) {
       <div className='info'>
         <h1>{props.data.title}</h1>
         <p className='hero__subtitle'>{props.data.subtitle}</p>
-        <button>{props.data.btnText}</button>
+        {/* <button>{props.data.btnText}</button> */}
+        <Button name={props.data.btnText} />
+        <Button name='small btn' color='tomato' type='sm' />
       </div>
     </div>
   );
