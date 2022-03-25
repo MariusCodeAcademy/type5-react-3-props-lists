@@ -1,5 +1,4 @@
-// susikuriam tuscia komp HeroSection
-// isitraukiam i App.js
+import './heroSection.css';
 
 function HeroSection(props) {
   return (
